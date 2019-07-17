@@ -1,147 +1,205 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html>
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html">
-  
-  <meta name="description" content="">
-  <meta name="renderer" content="webkit">
-  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-  <title>维加斯</title>
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="styles/vendor-594881c12f.css">
-
-  <link rel="stylesheet" href="styles/login-3741ff00db.css">
-  <script>
-    document.write("<link id='link_theme' rel='stylesheet' href='styles/theme/login-d41d8cd98f.default.css'>");
-  </script>
-  <script>
-    var ua = navigator.userAgent;
-    var isMobile = !!ua.match(/AppleWebKit.*Mobile.*/);
-
-    //检测是否移动端
-    if (isMobile) {
-      window.location.href = 'm/login.html';
-    }
-
-    if (sessionStorage.user) {
-      location.href = "main.html";
-    }
-  </script>
+<title>维加斯个人</title>
+<meta name="keywords" content="维加斯国际,缅甸维加斯,皇家国际,皇家快递,5个关键词" />
+<meta name="description" content="13085308885，我们主营游戏，网投、电话投注、现场三合一，双边0.9高额反水，3——5分钟快速存取款，免费注册会员账号，给大家打造了一个公平、公正、公开、安全可靠的大型娱乐平台！【支持24小时视频验证】" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/index.css" rel="stylesheet">
+<script src="js/jquery.min.js" ></script>
+<script src="js/comm.js" ></script>
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
 </head>
-<body oncontextmenu="return false;">
-<div id="content" class="container-fluid">
-  <div id="loading">
-    <div>云梦维加斯</div>
+<body>
+<header>
+  <div class="logo">维加斯个人博客</div>
+  <div class="top-nav">
+    <h2 id="mnavh"><span class="navicon"></span></h2>
+    <ul id="nav">
+      <li><a href="index.html">网站首页</a></li>
+      <li><a href="list.html">个人博客日记</a></li>
+      <li><a href="/2">个人博客模板</a></li>
+      <li><a href="/3">博客网站制作</a></li>
+      <li><a href="/4">网页设计心得</a></li>
+      <li><a href="/5">优秀个人博客</a></li>
+      <li><a href="/5">关于我</a></li>
+      <li><a href="/5">留言</a></li>
+    </ul>
   </div>
-  <div class="bg"></div>
-  <div class="down-content">
-    <div class="item">
-      <img src="images/code/H5.png">
-      <br>
-      <a class="down-btn" target="_blank" href="">扫码开户点击部在线</a>
-    </div>
-    <div class="item">
-      <img src="images/code/APP.png">
-      <br>
-      <a class="down-btn" target="_blank" href="javascript:window.open('https://appdown.cc0571.com/index.html');">安卓/苹果APP下载</a>
-      <a class="help" data-toggle="modal" data-target="#help_modal">
-        ios安装须知
-      </a>
-    </div>
+  <div class="search">
+    <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+      <input name="keyboard" id="keyboard" class="input_text" value="搜索你喜欢的" style="color: rgb(153, 153, 153);" onfocus="if(value=='搜索你喜欢的'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='搜索你喜欢的'}" type="text">
+      <input name="show" value="title" type="hidden">
+      <input name="tempid" value="1" type="hidden">
+      <input name="tbname" value="news" type="hidden">
+      <input name="Submit" class="input_submit" value="" type="submit">
+    </form>
   </div>
+</header>
+<aside class="side">
+  <div class="about"> <i><a href="/"><img src="images/avatar.jpg"></a></i>
+    <p>维加斯，一个80后草根女站长！09年入行。一直潜心研究web前端技术，一边工作一边积累经验，分享一些个人博客模板，以及SEO优化等心得。</p>
+  </div>
+  <div class="weixin"> <img src="https://aalinlong.github.io/skin/html/images/wx.jpg">
+    <p>关注我 么么哒！</p>
+  </div>
+</aside>
+<main>
   <div class="main-content">
-    <div class="logo"></div>
-    <div class="login-form animated fadeInDown animated-delay05">
-      <div class="form">
-        <div class="form-tip">
-          <span class="info">登录中。。。</span>
-        </div>
-        <div class="form-group">
-          <label for="username">账号</label>
-
-          <div class="input">
-            <input type="text" class="form-control" id="username" placeholder="请输入用户名" autocomplete="new-password">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="password">密码</label>
-
-          <div class="input">
-            <input type="password" class="form-control" id="password" placeholder="请输入密码" autocomplete="new-password">
-          </div>
-        </div>
-        <div class="form-group text-center btns-list">
-          <a id="btn_try" class="btn btn-default">试玩登录</a>
-          <a id="btn_ensure" class="btn btn-default">会员登录</a>
-          <a id="btn_manage" onclick="openurl('http://v.cy928.com/')" class="btn btn-default">管理网登录</a>
-        </div>
-        <div class="form-group toolbar-group">
-          <a class="back-old-version" href="old/login.html"><img src="images/theme/preview-old.png"> 返回经典版</a>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" checked="checked" id="remember_userinfo">记住账号
-            </label>
-          </div>
+    <div class="welcome"> 您好，欢迎您访问我们的官方网站！ </div>
+    <div class="picbox">
+      <h2 class="pictitle"><a href="/">个人博客网站模板</a></h2>
+      <!--box begin-->
+      <div class="Box_con"> <span class="btnl btn" id="btnl"></span> <span class="btnr btn" id="btnr"></span>
+        <div class="conbox" id="BoxUl">
+          <ul>
+            <li class="cur"><a href="/"><img src="https://aalinlong.github.io/d/file/news/humor/2014-01-13/67ce0f90b72e884e562d3360575ab3c3.jpg" alt=""/>
+              <p>如何快速建立自己的个人博客网站1</p>
+              </a> </li>
+            <li class="cur"><a href="/"><img src="https://aalinlong.github.io/d/file/news/life/2018-04-27/762f99f369ae786f970477feeb3b9d77.jpg" alt=""/>
+              <p>如何快速建立自己的个人博客网站2</p>
+              </a> </li>
+            <li class="cur"><a href="/"><img src="https://aalinlong.github.io/d/file/news/life/2018-06-17/917d732926d79cc2ae1012831ce51d1e.jpg" alt=""/>
+              <p>如何快速建立自己的个人博客网站3</p>
+              </a> </li>
+            <li class="cur"><a href="/"><img src="https://aalinlong.github.io/d/file/jstt/bj/2018-06-29/3f0b6da48a6fd4e626a021ff7bd0d74f.jpg" alt=""/>
+              <p>如何快速建立自己的个人博客网站4</p>
+              </a> </li>
+            <li class="cur"><a href="/"><img src="https://aalinlong.github.io/d/file/news/life/2018-06-29/75842f4d1e18d692a66c38eb172a40ab.jpg" alt=""/>
+              <p>如何快速建立自己的个人博客网站5</p>
+              </a> </li>
+            <li class="cur"><a href="/"><img src="https://aalinlong.github.io/d/file/news/s/2014-06-14/072f267a54748c6e71d40a2d03978993.jpg" alt=""/>
+              <p>如何快速建立自己的个人博客网站6</p>
+              </a> </li>
+            <li class="cur"><a href="/"><img src="https://aalinlong.github.io/d/file/blogs/2018-08-22/28e3bbca2ae0205f641a9072ecb7c100.jpg" alt=""/>
+              <p>如何快速建立自己的个人博客网站7</p>
+              </a> </li>
+            <li class="cur"><a href="/"><img src="https://aalinlong.github.io/d/file/blogs/2018-08-17/3ee0644472fa8556562ab3d8716b5316.jpg" alt=""/>
+              <p>如何快速建立自己的个人博客网站8</p>
+              </a> </li>
+          </ul>
         </div>
       </div>
+      <!--box end--> 
+    </div>
+    <div class="newsbox">
+      <section>
+        <div class="news">
+          <h2 class="newstitle"><span><a href="/">更多</a></span><b>个人博客日记</b></h2>
+          <ul>
+            <li><a href="/"><span>08-30</span>如何快速建立自己的个人博客网站</a></li>
+            <li><a href="/"><span>08-30</span>个人博客，属于我的小世界！</a></li>
+            <li><a href="/"><span>08-30</span>网易博客关闭，何不从此开始潇洒行走江湖！</a></li>
+            <li><a href="/"><span>08-30</span>个人网站做好了，百度不收录怎么办？来，看看他们怎么做的。</a></li>
+            <li><a href="/"><span>08-30</span>帝国cms 循环调用子栏目信息以及头条图片</a></li>
+            <li><a href="/"><span>08-30</span>我是怎么评价自己的？</a></li>
+            <li><a href="/"><span>08-30</span>html5 个人博客模板《蓝色畅想》</a></li>
+            <li><a href="/"><span>08-30</span>【匆匆那些年】总结个人博客经历的这四年</a></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="news">
+          <h2 class="newstitle"><span><a href="/">更多</a></span><b>设计思维</b></h2>
+          <ul>
+            <li><a href="/"><span>08-30</span>如何快速建立自己的个人博客网站</a></li>
+            <li><a href="/"><span>08-30</span>个人博客，属于我的小世界！</a></li>
+            <li><a href="/"><span>08-30</span>网易博客关闭，何不从此开始潇洒行走江湖！</a></li>
+            <li><a href="/"><span>08-30</span>个人网站做好了，百度不收录怎么办？来，看看他们怎么做的。</a></li>
+            <li><a href="/"><span>08-30</span>帝国cms 循环调用子栏目信息以及头条图片</a></li>
+            <li><a href="/"><span>08-30</span>我是怎么评价自己的？</a></li>
+            <li><a href="/"><span>08-30</span>html5 个人博客模板《蓝色畅想》</a></li>
+            <li><a href="/"><span>08-30</span>【匆匆那些年】总结个人博客经历的这四年</a></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="news">
+          <h2 class="newstitle"><span><a href="/">更多</a></span><b>结构设计</b></h2>
+          <ul>
+            <li><a href="/"><span>08-30</span>如何快速建立自己的个人博客网站</a></li>
+            <li><a href="/"><span>08-30</span>个人博客，属于我的小世界！</a></li>
+            <li><a href="/"><span>08-30</span>网易博客关闭，何不从此开始潇洒行走江湖！</a></li>
+            <li><a href="/"><span>08-30</span>个人网站做好了，百度不收录怎么办？来，看看他们怎么做的。</a></li>
+            <li><a href="/"><span>08-30</span>帝国cms 循环调用子栏目信息以及头条图片</a></li>
+            <li><a href="/"><span>08-30</span>我是怎么评价自己的？</a></li>
+            <li><a href="/"><span>08-30</span>html5 个人博客模板《蓝色畅想》</a></li>
+            <li><a href="/"><span>08-30</span>【匆匆那些年】总结个人博客经历的这四年</a></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="news">
+          <h2 class="newstitle"><span><a href="/">更多</a></span><b>设计素材</b></h2>
+          <ul>
+            <li><a href="/"><span>08-30</span>如何快速建立自己的个人博客网站</a></li>
+            <li><a href="/"><span>08-30</span>个人博客，属于我的小世界！</a></li>
+            <li><a href="/"><span>08-30</span>网易博客关闭，何不从此开始潇洒行走江湖！</a></li>
+            <li><a href="/"><span>08-30</span>个人网站做好了，百度不收录怎么办？来，看看他们怎么做的。</a></li>
+            <li><a href="/"><span>08-30</span>帝国cms 循环调用子栏目信息以及头条图片</a></li>
+            <li><a href="/"><span>08-30</span>我是怎么评价自己的？</a></li>
+            <li><a href="/"><span>08-30</span>html5 个人博客模板《蓝色畅想》</a></li>
+            <li><a href="/"><span>08-30</span>【匆匆那些年】总结个人博客经历的这四年</a></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="news">
+          <h2 class="newstitle"><span><a href="/">更多</a></span><b>设计教程</b></h2>
+          <ul>
+            <li><a href="/"><span>08-30</span>如何快速建立自己的个人博客网站</a></li>
+            <li><a href="/"><span>08-30</span>个人博客，属于我的小世界！</a></li>
+            <li><a href="/"><span>08-30</span>网易博客关闭，何不从此开始潇洒行走江湖！</a></li>
+            <li><a href="/"><span>08-30</span>个人网站做好了，百度不收录怎么办？来，看看他们怎么做的。</a></li>
+            <li><a href="/"><span>08-30</span>帝国cms 循环调用子栏目信息以及头条图片</a></li>
+            <li><a href="/"><span>08-30</span>我是怎么评价自己的？</a></li>
+            <li><a href="/"><span>08-30</span>html5 个人博客模板《蓝色畅想》</a></li>
+            <li><a href="/"><span>08-30</span>【匆匆那些年】总结个人博客经历的这四年</a></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="news">
+          <h2 class="newstitle"><span><a href="/">更多</a></span><b>设计心得</b></h2>
+          <ul>
+            <li><a href="/"><span>08-30</span>如何快速建立自己的个人博客网站</a></li>
+            <li><a href="/"><span>08-30</span>个人博客，属于我的小世界！</a></li>
+            <li><a href="/"><span>08-30</span>网易博客关闭，何不从此开始潇洒行走江湖！</a></li>
+            <li><a href="/"><span>08-30</span>个人网站做好了，百度不收录怎么办？来，看看他们怎么做的。</a></li>
+            <li><a href="/"><span>08-30</span>帝国cms 循环调用子栏目信息以及头条图片</a></li>
+            <li><a href="/"><span>08-30</span>我是怎么评价自己的？</a></li>
+            <li><a href="/"><span>08-30</span>html5 个人博客模板《蓝色畅想》</a></li>
+            <li><a href="/"><span>08-30</span>【匆匆那些年】总结个人博客经历的这四年</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="blank"></div>
+    <div class="links">
+      <h2 class="linktitle">合作伙伴</h2>
+      <ul class="link-pic">
+        <li><a href="/"><img src="images/yqlj.png"></a></li>
+        <li><a href="/"><img src="images/yqlj.png"></a></li>
+        <li><a href="/"><img src="images/yqlj.png"></a></li>
+        <li><a href="/"><img src="images/yqlj.png"></a></li>
+        <li><a href="/"><img src="images/yqlj.png"></a></li>
+      </ul>
+      <ul class="link-text">
+        <li><a href="https://aalinlong.github.io">维加斯个人博客</a></li>
+        <li><a href="https://aalinlong.github.io">维加斯个人博客</a></li>
+        <li><a href="https://aalinlong.github.io">维加斯个人博客</a></li>
+        <li><a href="https://aalinlong.github.io">维加斯个人博客</a></li>
+        <li><a href="https://aalinlong.github.io">维加斯个人博客</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>Copyright 2018  Inc. AllRights Reserved. Design by <a href="/">维加斯个人博客</a> 蜀ICP备11002373号-1</p>
     </div>
   </div>
-</div>
-
-<div class="modal fade" id="help_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header" style="color: yellow;">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title" id="myModalLabel">IOS 安装须知</h3>
-      </div>
-      <div class="modal-body">
-        <article>
-          <div class="inner current"><h1 id="ios9-">iOS9 设备设置信任证书</h1>
-            <p>iOS9 以后的系统，苹果改变了 InHouse 安装包的信任方式，不再弹出提示框，让用户点击“信任”后直接打开应用了，而是需要在设置中选择对应的描述文件，点击“信任”后才可以使用。</p>
-            <p>详细的设置方法和教程如下：</p>
-            <p><strong>第一步：打开“设置”—“通用”—“描述文件 (IOS9.3为设备管理)”—“Hangzhou Qifeng Information
-              Technology”-"信任"</strong><br><br>
-              <img src="image/c/38/74d9960c0498e5e384446d90f2012.png" alt="第一步"><br>
-              <em>(注：iOS9 在进入“设置-通用”时有时会不显示描述文件选项，多进几次就可以了)</em></p>
-            <p><strong>第二步：选择对应的描述文件</strong><br>
-              <img src="image/f/4f/00620f890cb08f2f618e151891853.png" alt=""><br>
-              <strong>第三步：点击“信任”，即可完成</strong><br>
-              <img src="image/a/9d/b7a6edbb30c3996b70a514ef82374.png" alt=""></p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</div>
-<!--信息提示窗口-->
-<div id="main_modal_info" class="modal animated fadeIn" role="dialog" data-backdrop="static">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
-        <h4 class="modal-title" id="main_modal_info_title"><span class="glyphicon glyphicon-info-sign"></span> 提示</h4>
-      </div>
-      <div class="modal-body">
-        <div id="main_modal_info_content">
-          登录已过期，请重新登录。
-        </div>
-        <div class="btn-groups">
-          <a class="btn btn-default" id="main_modal_info_btn_ok"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;确定</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script src="scripts/Common-ee98ae94f2.js"></script>
-
-<script src="scripts/SystemStorage-a94f04c1be.js"></script>
-
-<script src="scripts/vendor-3c1b24bdbb.js"></script>
-<script src="scripts/vendor/msgpack-6436d7a6dc.js"></script>
-<script src="scripts/Login-bdb795c98c.js"></script>
+</main>
+<a href="#" class="cd-top cd-is-visible">Top</a>
 </body>
 </html>
